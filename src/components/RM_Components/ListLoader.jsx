@@ -1,7 +1,7 @@
 "use client";
 import React, { useState } from "react";
 import { MultiStepLoader as Loader } from "../ui/multi-step-loader";
-import { IconSquareRoundedX } from "@tabler/icons-react";
+import { IconSquareRoundedX,IconArrowRampRight } from "@tabler/icons-react";
 import { Button } from "../ui/moving-border";
 
 const loadingStates = [
@@ -29,15 +29,17 @@ const loadingStates = [
 export default function ListLoader() {
   const [loading, setLoading] = useState(false);
   return (
-    (<div className=" flex items-center justify-center">
+    (<div className="absolute bottom-44 flex gap-5 items-center justify-center">
       {/* Core Loader Modal */}
       <Loader loadingStates={loadingStates} loading={loading} duration={2000} />
       {/* The buttons are for demo only, remove it in your actual code ⬇️ */}
       <Button
         onClick={() => setLoading(true)}
         >
-        <b className="p-4">Your's HSC ICT roadmaP </b>
+        <b className="p-4">Yours HSC ICT roadmaP </b>
       </Button>
+      <Button className="p-4 "><IconArrowRampRight size={40}/></Button>
+
       {loading && (
         <button
           className="fixed top-4 right-4 text-black dark:text-white z-[120]"
