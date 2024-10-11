@@ -36,7 +36,7 @@ export default function ListLoader() {
       <Button
         onClick={() => setLoading(true)}
         >
-        <b className="p-4">Yours HSC ICT roadmaP </b>
+        <b className="p-4">HSC ICT roadmaP </b>
       </Button>
 
       {loading && (

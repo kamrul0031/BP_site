@@ -3,7 +3,7 @@
 import { LampContainer } from "@/components/ui/lamp";
 import { motion } from "framer-motion";
 import { IconArrowRampRight } from "@tabler/icons-react";
-import Image from 'next/image';
+import Image from "next/image";
 
 import { FlipWords } from "@/components/ui/flip-words";
 import MacDock from "@/components/RM_Components/MacDock";
@@ -42,7 +42,7 @@ export default function Home() {
       <LampContainer>
         <motion.h1
           initial={{ opacity: 0.5, y: 100 }}
-          whileInView={{ opacity: 1, y: 0 }}
+          whileInView={{ opacity: 1, y: -50 }}
           transition={{
             delay: 0.3,
             duration: 0.8,
@@ -59,19 +59,18 @@ export default function Home() {
           </span>
         </motion.h1>
       </LampContainer>
-      <div className="flex gap-5 absolute bottom-56">
-        <Button className="p-3" >
-        Sign Up / Login 
-      </Button>
-      </div>
+
       {/* <div
        className="bg-blue-400 absolute bottom-0 justify-center w-full flex gap-2"> */}
-      <div className=" flex gap-3 absolute bottom-36">
-        <AnimatedTooltip items={people} />
-        <ListLoader />
-        <button className="border-2 bg-gradient-to-t from-cyan-800 to-slate-500/10 rounded-full w-16 h-16 grid place-items-center">
-        <IconArrowRampRight size={40}/>  
-      </button>
+      <div className=" flex flex-col gap-3 absolute bottom-36">
+        <Button className="p-3">Sign Up / Login</Button>
+        <div className="flex ">
+          <AnimatedTooltip items={people} />
+          <ListLoader />
+          <button className="border-2 bg-gradient-to-t from-cyan-800 to-slate-500/10 rounded-full w-16 h-16 grid place-items-center">
+            <IconArrowRampRight color="white" size={40} />
+          </button>
+        </div>
       </div>
 
       {/* </div> */}
