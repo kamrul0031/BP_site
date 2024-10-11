@@ -29,7 +29,7 @@ const loadingStates = [
 export default function ListLoader() {
   const [loading, setLoading] = useState(false);
   return (
-    (<div className="absolute bottom-44 flex gap-5 items-center justify-center">
+    (<div className="  flex gap-5 items-center justify-center">
       {/* Core Loader Modal */}
       <Loader loadingStates={loadingStates} loading={loading} duration={2000} />
       {/* The buttons are for demo only, remove it in your actual code ⬇️ */}
@@ -38,7 +38,6 @@ export default function ListLoader() {
         >
         <b className="p-4">Yours HSC ICT roadmaP </b>
       </Button>
-      <Button className="p-4 "><IconArrowRampRight size={40}/></Button>
 
       {loading && (
         <button
