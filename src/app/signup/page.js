@@ -1,8 +1,8 @@
 import { SignupFormDemo } from "@/components/RM_Components/SignupForm";
 
-export default function SignUp(){
+export default function Signup(){
     return(
-        <div className="flex justify-center items-center h-screen px-5">
+        <div className="flex items-center h-screen">
             <SignupFormDemo/>
         </div>
     )

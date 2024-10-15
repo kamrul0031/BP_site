@@ -4,9 +4,7 @@ import { Label } from "../ui/label";
 import { Input } from "../ui/input";
 import { cn } from "@/lib/utils";
 import {
-  IconBrandGithub,
-  IconBrandGoogle,
-  IconBrandOnlyfans,
+  IconDirectionSign
 } from "@tabler/icons-react"
 import { useRouter } from "next/navigation";
 
@@ -57,7 +55,7 @@ export function SignupFormDemo() {
           Sign up &rarr;
           <BottomGradient />
         </button>
-        <span className="cursor-pointer text-sm hover:text-slate-300" onClick={()=>{router.replace('/')}}>Back to the Home page</span>
+        <span className="cursor-pointer text-sm hover:text-slate-300 dark:text-white flex items-center" onClick={()=>{router.replace('/')}}><IconDirectionSign className="rotate-180"/> Back to the <pre> </pre><b>Home page</b></span>
 
         {/* <div
           className="bg-gradient-to-r from-transparent via-neutral-300 dark:via-neutral-700 to-transparent my-8 h-[1px] w-full" />

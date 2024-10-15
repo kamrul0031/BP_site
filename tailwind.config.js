@@ -12,7 +12,7 @@ module.exports = {
     // Or if using `src` directory:
     "./src/**/*.{js,ts,jsx,tsx,mdx}",
   ],
-  darkMode: ["class", "class"],
+//   darkMode: ["class", "class"],
   theme: {
   	extend: {
   		boxShadow: {
