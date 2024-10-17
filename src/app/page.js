@@ -11,6 +11,7 @@ import { Button } from "@/components/ui/moving-border";
 import { AnimatedTooltip } from "@/components/ui/animated-tooltip";
 import ProfilePic from "@/app/Profile.jpg";
 import { useRouter } from "next/navigation";
+import conf from "@/appwrite/conf";
 
 const people = [
   {
@@ -27,6 +28,8 @@ const words1 = ["concepts", "code"];
 export default function Home() {
   const router = useRouter();
   console.log('hel')
+  console.log(conf.ENDPOINT)
+  console.log(conf.PROJECT_ID)
 
   return (
     <div className="dark flex justify-center">
